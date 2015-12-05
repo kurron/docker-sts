@@ -1,9 +1,9 @@
 idea:
     build: .
     labels:
-        org.kurron.description: "logFaces client"
-        org.kurron.version: "4.2.1"
-    container_name: "logfaces"
+        org.kurron.description: "Spring Tool Suite"
+        org.kurron.version: "3.7.2"
+    container_name: "sts"
     net: "host"
     volumes:
         - /tmp/.X11-unix:/tmp/.X11-unix

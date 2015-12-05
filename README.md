@@ -1,5 +1,5 @@
 #Overview
-This project is a simple Docker image that runs the [logFaces client](http://www.moonlit-software.com/).
+This project is a simple Docker image that runs the [Spring Tool Suite IDE]().
 
 #Prerequisites
 * a working [Docker](http://docker.io) engine

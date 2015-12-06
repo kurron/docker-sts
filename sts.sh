@@ -1,6 +1,7 @@
 #!/bin/bash
 
 CMD="docker run \
+       --rm \
        --name sts \
        --net "host" \
        --env DISPLAY=unix$DISPLAY \

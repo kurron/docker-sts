@@ -10,7 +10,13 @@ RUN mkdir -p /opt/ide && \
     tar zxvf /tmp/ide.tar.gz --strip-components=1 -C /opt/ide && \
     ln -s /usr/lib/jvm/jdk1.8.0_65/jre /opt/ide/sts-3.7.2.RELEASE/jre && \
     chown -R developer:developer /opt/ide && \
-    rm /tmp/ide.tar.gz
+    rm /tmp/ide.tar.gz && \
+    apt-get update && \
+    apt-get install -y libxslt1.1 && \
+    apt-get autoremove -y && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/* && \
+    rm -rf /tmp/*
 
 USER developer:developer
 WORKDIR /home/developer

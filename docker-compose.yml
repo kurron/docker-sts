@@ -1,8 +1,5 @@
-idea:
+sts:
     build: .
-    labels:
-        org.kurron.description: "Spring Tool Suite"
-        org.kurron.version: "3.7.2"
     container_name: "sts"
     net: "host"
     volumes:
